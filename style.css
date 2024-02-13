@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 0.6s;
+}
+body{
+    transition: 0.6s;
+}
+
+
+/* nav bar start */
+
+.nav-bar{
+    position:sticky;
+
+    top: 0;
+    left: 0;
+    display: flex;
+justify-content: space-between;
+background: rgb(0, 0, 44);
+align-items: center;
+padding: 10px 50px;
+flex-basis: 100%;
+transition: 0.6s;
+}
+.logo{
+    flex-basis: 60%;
+
+}
+.logo img{
+    width: 150px;
+    height: 45px;
+    margin-left: 100px;
+
+}
+.nav{
+    flex-basis: 40%;
+    transition: 0.6s;
+}
+.nav ul{
+    display: flex;
+    margin: 0px 10px;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+.nav ul a:hover{
+transform: scale(1.5);
+transition: transform 0.5s;
+}
+.nav ul li{
+    list-style: none;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+/* nav bar end */
+
+
+/* header Start */
+
+.header{
+    background-image: url(assest/img/header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.header>.opacity{
+    background: rgba(0, 14, 136, 0.705);
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.container{
+    position: relative;
+
+}
+.header-container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    transition: 0.6s;
+}
+.con-top{
+    margin-top: -70px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+.con-top p{
+    font-size:16pt;
+    color: white;
+}
+.con-mid{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.con-mid h1{
+    font-size: 54pt;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+}
+.mid{
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    top: 100%;
+    left: 50%;
+    transition:0.8s;
+    width: 700px;
+}
+.current{
+    transition:0.8s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.get-list{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+.get a{
+    margin: 5px 10px;
+}
+.get, .list > a{
+    text-decoration: none;
+}
+.get-list>div > a>button{
+    text-decoration: none;
+    font-size: 17pt;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.get-one{
+    background: rgb(0, 188, 235);
+    color: white;
+    transition: 0.6s;
+}
+.list-one{
+    background: rgb(0, 182, 0);
+    color: white;
+    transition: 0.6s;
+}
+
+.list-two{
+    background: rgb(235, 0, 0);
+    color: white;
+    transition: 0.6s;
+}
+.get-two{
+    background: rgb(0, 27, 182);
+    color: white;
+    transition: 0.6s;
+}
+
+
+/* header end */
+
+/* <!-- welcome start --> */
+
+
+.welcome{
+    background: lightgray;
+    width: 100%;
+    height: 70px;
+    transition: 0.6s;
+}
+.welcome h2{
+    text-align: center;
+    padding: 20px;
+    color: rgb(0, 57, 71);
+    transition: 0.6s;
+}
+.welcome>h2>i{
+    margin: 5px;
+    transition: 0.6s;
+}
+
+/* <!-- welcome end --> */
+
+
+/* <!-- Feature list start --> */
+
+.feature-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.6s;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px 20px 100px;
+    transition: 0.6s;
+}
+.title h2{
+    padding: 10px;
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: below;
+    
+}
+.title p{
+    text-align: center;
+    font-size: 11pt;
+    width: 600px;
+    height: auto;
+    padding: 50px 0px 20px 0px ;
+}
+
+.feature-flex{
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-flex>div{
+    /* width: 300px; */
+    /* height: auto; */
+    padding: 2px 50px;
+    text-align:center;
+    justify-content: center;
+    
+}
+.feature-flex>div>h2{
+font-size: 17pt;
+padding: 10px 0px;
+}
+.feature>div{
+    padding: 10px;
+    }
+
+.feature>i{
+        padding: 20px;
+        font-size: 50pt;
+        color: rgb(1, 69, 71);
+        }
+.feature>div>hr{
+    height: 4px;
+    margin: 0px 0px 5px 0px;
+    width: auto;
+    background: rgb(0, 0, 116);
+    }
+
+.feature>p{
+        font-size: 11pt;
+        padding: 0px 10px 10px 0px;
+        }
+.feature>a>button{
+            font-size: 12pt;
+            padding:10px 15px;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            text-transform: uppercase;
+            background: rgb(0, 189, 214);
+            cursor: pointer;
+            margin-top: 5px;
+
+            }
+
+
+
+/* <!-- Feature list end --> */
+
+
+
+/* <!-- faculty start --> */
+
+.our-faculty{
+        width: 100%;
+        height: auto;
+        background: black;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+}
+.faculty-title{
+    width: 650px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.faculty-title>div>h2{
+    font-size: 20pt;
+    padding: 10px;
+    text-align: center;
+}
+.faculty-title>div>hr{
+    height: 5px;
+    margin-top: 5px;
+    background: linear-gradient(180deg, rgb(196, 0, 0),blue);
+}
+.faculty-title>div{
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+}
+.faculty-title>p{
+    padding: 20px 5px;
+    font-size: 12pt;
+    text-align: center;
+}
+
+/* faculty-container start */
+.faculty-container{
+
+        padding: 30px 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: space-between;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container>div{
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.img{
+    padding: 5px;
+}
+.sub-container>div>img{
+    outline: 2px solid white;
+    border: 5px solid black;
+    
+}
+.sub-container>div>h2{
+    padding: 5px;
+    margin-top: 10px;
+    
+
+}
+
+.sub-container>div>hr{
+    height: 2px;
+    margin-top: 5px;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(196, 0, 0),blue);
+}
+.sub-container>div>h3{
+    font-size: 22pt;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(147, 246, 253);
+    text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.3);
+}
+.sub-container>div>p{
+width:350px;
+font-size: 12pt;
+padding: 10px;
+text-align: center;
+}
+
+
+/* <!-- faculty end --> */
+
+
+/* coursers start */
+.coursers-div{
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    transition: 0.6s;
+}
+.coursers-div>.faculty-title>div>h2{
+    padding: 5px;
+    margin-top: 10px;
+    transition: 0.6s;
+    
+
+}
+
+.coursers-div>.faculty-title>div>hr{
+    height: 4px;
+    margin-top: 5px;
+    width: 100%;
+    background:rgb(0, 65, 0);
+    transition: 0.6s;
+}
+.coursers-div>.faculty-title>p{
+    font-size: 11pt;
+    padding: 10px;
+    text-align:center;
+    transition: 0.6s;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    transition: 0.6s;
+}
+.list>div{
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    width: 100%;
+    height: auto;
+    transition: 0.6s;
+}
+.design, .engineer, .manage{
+    border: 1px solid black;
+    color: black;
+    background: rgb(236, 236, 236);
+    font-size: 12pt;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.design:checked, .engineer:checked, .manage:checked{
+    text-decoration:underline ;
+
+}
+.design:hover, .engineer:hover, .manage:hover{
+    text-decoration:underline ;
+    transition: 0.6s;
+
+}
+
+.list>div>p>span{
+    font-weight: bold;
+    padding: 0px 5px ;
+    transition: 0.6s;
+}
+.design-div, .engineer-div, .manage-div{
+    background: white;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 11pt;
+    /* visibility: hidden; */
+    /* position: absolute; */
+    display: none;
+
+}
+.display{
+    transition:  0.6s;
+    display: block;
+    /* visibility: visible; */
+}
+.img-list{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+.course-img{
+    flex-basis: 50%;
+}
+.course-list{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.centers{
+    margin: 10px 0px;
+    background: rgb(206, 241, 253);
+    color: rgb(0, 87, 102);
+    width: 400px;
+    height: auto;
+    padding: 10px 20px;
+    border: 1px solid rgba(1, 77, 90,0.5);
+    
+}
+
+.centers>h1{
+    font-size: 30pt;
+    padding: 17px 10px;
+}
+.centers>p{
+    font-size: 27pt;
+    padding: 17px 10px;
+    font-weight: 500;
+}
+
+
+/* <!-- courses end --> */
+
+
+/* contact us start */
+.contact-us{
+    background-image: url(assest/img/contact.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.contact-us>.opacity{
+    background: rgba(0, 0, 0, 0.75);
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.contact-us>.opacity>.faculty-title>div>hr{
+    height: 4px;
+    margin-top: 5px;
+    width: 100%;
+    background:rgb(0, 66, 57);
+}
+
+.form{
+width: 700px;
+height: auto;
+padding: 20px 0px;
+}
+.form>form>label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius:7px ;
+}
+.form>form>label>input{
+    padding: 8px 12px;
+    font-size: 12pt;
+    border-radius:10px ;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.form>form>label>textarea{
+    padding: 5px 10px;
+    font-size: 12pt;
+    border-radius:10px ;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+}
+
+.form>.btn{
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 7px;
+    font-size: 14pt;
+    border: none;
+    background: rgb(0, 182, 228);
+    color: white;
+
+}
+/* contact us end */
+
+
+/* <!-- location-socail start --> */
+
+.locat-social{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* padding: 50px; */
+}
+.locat-social>div>h2{
+font-size: 23pt;
+padding: 10px;
+text-transform: uppercase;
+}
+.locat-social>div>hr{
+    height: 1px;
+    margin:15px auto;
+
+}
+.locat-social>div>p>span{
+font-weight: bold
+
+}
+.link{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.link>a{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.location{
+    flex-basis: 50%;
+    padding: 50px 70px;
+}
+.socail{
+    flex-basis: 50%;
+    padding: 50px 70px;
+}
+
+/* <!-- location-socail end --> */
+
+
+/* footer start */
+footer{
+    background: rgb(35, 0, 65);
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    /* height: 70px; */
+    padding: 20px;
+}
+.footer>p>a{
+    text-decoration: none;
+    color: white;
+}
+.footer>p{
+    font-size: 11pt;
+}
+.footer>p>a:hover{
+    text-decoration: underline;
+}
+
+/* footer end */
